@@ -9,7 +9,7 @@ CheckForJumping:
 -        bne NoJump                ;skip ahead to something else
 +        nop
 +	nop
-         lda A_D_Buttons           ;check for A button press
+         lda A_B_Buttons           ;check for A button press
          and #A_Button
          beq NoJump                ;if not, branch to something else
 -        and PreviousA_B_Buttons   ;if button not pressed in previous frame, branch
